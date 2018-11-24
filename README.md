@@ -14,6 +14,7 @@ python manage.py syncdb
 
 ## Notes
 
+    docker run --name some-postgres --network=host -e POSTGRES_PASSWORD=postgres -d postgres:10.3
     sudo apt-get install postgresql-common
     sudo apt-get install postgresql-server-dev-10
     sudo apt-get install postgresql-client-10
