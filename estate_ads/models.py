@@ -2,21 +2,21 @@
 from django.db import models
 
 REGIONS = (
-    (1, "Ljubljana - okolica"),
-    (2, "Južna primorska"),
-    (3, "Gorenjska"),
-    (4, "Severna primorska"),
-    (5, "Savinjska"),
-    (6, "Dolenjska"),
-    # 7 - Prazno?!
-    (8, "Notranjska"),
-    (9, "Podravska"),
-    (10, "Koroška"),
-    (11, "Zasavska"),
-    (12, "Posavska"),
-    # 13 - VSI KRAJI
+#    (1, "Ljubljana - okolica"),
+#    (2, "Južna primorska"),
+#    (3, "Gorenjska"),
+#    (4, "Severna primorska"),
+#    (5, "Savinjska"),
+#    (6, "Dolenjska"),
+#    # 7 - Prazno?!
+#    (8, "Notranjska"),
+#    (9, "Podravska"),
+#    (10, "Koroška"),
+#    (11, "Zasavska"),
+#    (12, "Posavska"),
+#    # 13 - VSI KRAJI
     (14, "Ljubljana - mesto"),
-    (15, "Pomurska")
+#    (15, "Pomurska")
 )
 
 AD_TYPES = (
@@ -32,7 +32,12 @@ BUILDING_TYPES = (
     (2, "Posest"),
     (3, "Poslovni prostor"),
     (4, "Garaža"),
-    (5, "Vikend")
+    (5, "Vikend"),
+    (6, "Stanovanje trisobno"),
+    (7, "Stanovanje enoinpolsobno"),
+    (8, "Stanovanje dvosobno"),
+    (9, "Stanovanje Drugo"),
+    (10, u'Stanovanje \u0161tirisobno'),
 )
 
 

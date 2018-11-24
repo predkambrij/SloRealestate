@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from queue import Queue
+from Queue import Queue
 import json
 from pyquery import PyQuery as pq
 from django.core.management import BaseCommand
@@ -31,7 +31,11 @@ class Command(BaseCommand):
 
     @staticmethod
     def parse_float(number_string):
-        return locale.atof(number_string.strip().replace('.', ''))
+        #print repr(number_string)
+        x = number_string.strip().replace('.', '')
+        if type(u"a") == type(x):
+            x = x.encode("utf-8")
+        return locale.atof(x)
 
     @staticmethod
     def parse_type(raw_data):
@@ -68,7 +72,7 @@ class Command(BaseCommand):
                 building_type = BUILDING_TYPES[5][0]
 
             if building_type is None:
-                print("Unknown building type " + building_type_string)
+                print("Unknown building type ", building_type_string)
 
         return ad_type, building_type
 

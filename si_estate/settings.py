@@ -22,7 +22,9 @@ SECRET_KEY = 'ypd89rte6dama#v@rp7cu70ciq0nag()d)_thpy27!jm3!6qnw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+u'192.168.0.10'
+]
 
 TEMPLATES = [
     {
@@ -77,9 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'nepremicnine',
-        'USER': 'nepremicnine',
-        'PASSWORD': 'nepremicnine',
-        'HOST': 'localhost',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '192.168.0.10',
         'PORT': ''
     }
 }
